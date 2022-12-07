@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seatwork2</title>
+
+    <style type="text/css">
+        table{border-color: rgba(50, 202, 219, 0.937) ; margin: 0px auto  ;border-style: dashed; border-width: 6px; padding-top: 5px;
+         padding-left: 3px; padding-right: 3px;padding-bottom: 2px;}
+
+        td{text-align: center  ;font-size: 10; font-family: 'Kanit', sans-serif; font-family: 'Ubuntu Mono', monospace;}
+        .underline{text-decoration: underline; font-size: 25px ;}
+        .overline{text-decoration: overline; font-size: 25px;}
+        .tablecolor{background-color: rgb(0, 250, 212);}
+        .textcolor{color:#ffaa00; text-shadow: rgb(45, 45, 133) 2px 1px; ;}
+        body{background-color: #c1c5ffca ;}
+        h1{text-shadow: 1px 2px rgb(246, 71, 194) ; text-align: center;}
+        p{text-align: center;}
+        div{text-align: center;}
+        .comments{text-shadow: rgba(147, 37, 251, 0.867) 1px 1px;}
+        .formcentre{display:flex; justify-content: center;}
+        .form-textarea{background-color: rgba(15, 212, 212, 0.74); opacity: 25%;}
+        .Form-fullname{background-color: rgba(15, 212, 212, 0.74); opacity: 25%;border-style: dashed;}
+        .form-email{background-color: rgba(15, 212, 212, 0.74); opacity: 25%;border-style: dashed;}
+        .form-donation{background-color: rgba(148, 34, 236, 0.74); opacity: 25%;border-style: dashed;}
+        .donate-button{background-color: aquamarine; border-color: aqua;border-style: double; text-shadow: violet 1px 1px; 
+            cursor:pointer;}
+        
+
+    
+        
+        
+
+
+    </style>
+    
+</head>
+<body>
+
+    <h1>
+        Dog Breeds
+    </h1>
+
+    <Table border="4px">
+
+        <tr class="tablecolor">
+            <td class="textcolor"> Image </td>
+            <td class="textcolor">Name</td> 
+            <td class="textcolor"> Description</td>
+        </tr>
+
+
+        <tr>
+            <td> <img src="https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/06154034/Akita-standing-outdoors-in-the-summer.jpg" height="200" width="200"></td>
+            <td class="underline" class="Akita"> Akita</td>
+
+            <td> According to American Kennel Club, the Akita is a Japanese muscular dog. It is also double-coated. <br>
+                This breed is also famous for its anicent Japanese lineage, the Akita was known for its Dignity.
+                
+            </td>
+        </tr>
+
+
+
+        <tr>
+            <td> <img src="https://www.akc.org/wp-content/uploads/2020/01/American-Bulldog-standing-in-three-quarter-view.jpg" height="200" width="200"></td>
+            <td class="overline"> American Bulldog</td>
+            <td> According to American Kennel Club, the American Bulldogs are well-balanced athletic dogs. </td>
+            
+        </tr>
+
+
+
+        <tr>
+            <td> <img src="https://www.akc.org/wp-content/uploads/2017/11/Australian-Kelpie-herding-sheep.jpg" height="200" width="200"></td>
+            <td class="underline"> Australian Kelpie</td>
+            <td> According to American Kennel Club, the Australian Kelpie is capable of untiring work.</td>
+            
+        </tr>
+
+        <tr>
+            <td> <img src="https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/12153852/American-Eskimo-Dog-standing-in-the-grass-in-bright-sunlight.jpg" height="200" width="200"></td>
+            <td class="overline"> American Eskimo <br> Dog</td>
+            <td> According to American Kennel Club, <br> the American Eskimo Dog has very striking looks with a clever mind.</td>
+            
+        </tr>
+
+        <tr>
+            <td> <img src="https://www.akc.org/wp-content/uploads/2017/11/Affenpinscher-running-outdoors.jpg" height="200" width="200"></td>
+            <td class="underline"> Affenpinscher</td>
+            <td> According to American Kennel Club, the Affenpinscher is loyal, curious, and famously amusing.</td>
+            
+        </tr>
+
+        <tr>
+            <td> <img src="data:image/jpeg;base64,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" height="200" width="200"></td>
+            <td class="overline"> American Foxhound</td>
+            <td> According to American Kennel Club, the American Foxhounds are good nurtured,<br> low maintenance hounds.</td>
+            
+        </tr>
+
+        <tr>
+            <td> <img src="https://www.akc.org/wp-content/uploads/2017/11/Beagles-standing-in-a-frosty-field-on-a-cold-morning.jpg" height="200" width="200"></td>
+            <td class="underline">Beagle</td>
+            <td>According to American Kennel Club, the Beagle is an excellent hunting dog, it is also very funny.</td>
+            
+        </tr>
+
+        <tr>
+            <td> <img src="https://www.akc.org/wp-content/uploads/2017/11/Basenji-running-through-a-field.jpg" height="200" width="200"></td>
+            <td class="overline">Basenji</td>
+            <td> According to American Kennel Club, the Basenji is famous for being named as Africa's barkless dog.</td>
+            
+        </tr>
+
+        <tr>
+            <td> <img src="https://www.akc.org/wp-content/uploads/2017/11/AdobeStock_23183632.jpg" height="200" width="200"></td>
+            <td class="underline"> Basset Fauve <br> de Bretagne</td>
+            <td> According to American Kennel Club, the Basset Fauve de Bretagne is known for its <br> smart, courageous, and determined aspects in life.</td>
+            
+        </tr>
+
+        <tr>
+            <td> <img src="https://www.akc.org/wp-content/uploads/2017/11/Bearded-Collie-standing-in-the-grass.jpg" height="200" width="200"></td>
+            <td class="overline"> Bearded Collie</td>
+            <td> According to American Kennel Club, <br> the Bearded Collie breed is a boisterous and charismatic dog from Scotland.</td>
+            
+        </tr>
+
+        <tr>
+            <td> <img src="https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/07122515/Belgian-Laekenois-standing-in-profile-in-a-field.jpg" height="200" width="200"></td>
+            <td class="underline"> Belgian Laekonis</td>
+            <td> According to American Kennel Club, the Belgian Laekonis is strong, agile, and full of life.</td>
+            
+        </tr>
+
+        
+
+
+       
+
+
+     
+
+       
+
+
+    </Table>  <br> <br>
+
+    <div class="formcentre">
+
+        <form>
+            <label for="fullname">Full name</label>
+                <input class="Form-fullname" type="text" id="fullname" name="fullname" value="">
+
+
+
+            <label for="email">Email:</label>
+                <input class="form-email" type="email" id="email" name="email">
+                
+
+                <h3 class="comments">Comments</h3>
+               
+                <textarea class="form-textarea" name="message" rows="10" cols="80"></textarea> <br> <br> <br>
+
+            <label for="Donation">Donation</label>
+			<input class="form-donation" type="text" id="Donation" name="Donation" value="">
+
+            <button type="button" class="donate-button">DONATE HERE!</button>
+    
+            </form>
+    </div>
+
+    <p>References</p> <br>
+
+    <p>American Kennel Club. (n.d.). Dog Breeds - Types Of Dogs. https://www.akc.org/dog-breeds/page/2/</p>
+    <p>American Kennel Club. (n.d.). Dog Breeds - Types Of Dogs. https://www.akc.org/dog-breeds/page/3/</p>
+
+    <div>
+        <a href="https://www.akc.org/dog-breeds/page/2/"> ( All images gathered from this website, click this text! )</a>
+    </div>
+    <br>
+    <div>
+        <a href="https://www.akc.org/dog-breeds/page/3/"> ( All images gathered from this website, click this text! )</a>
+    </div>
+    
+    
+</body>
+</html>
